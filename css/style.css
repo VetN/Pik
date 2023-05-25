@@ -38,8 +38,7 @@
 
 .page {
 	margin: 0 auto;
-	padding-left: 5vw;
-	padding-right: 5vw;
+	position: relative;
 	font-family: 'Graphik', Helvetica, Arial, sans-serif;
     background: rgb(255, 255, 255);
     box-sizing: border-box;
@@ -48,60 +47,68 @@
     
     
 }
+footer {
+    width: 100%;
+    margin-top: 100px;
+    height: 90px;
+    background: rgb(234, 234, 234, 0.7);
+}
 .all-header {
-	max-width: 1249px;
-	margin: 0 auto;
+    
+	margin: 10px auto;
     background: rgb(234, 234, 234, 0.7);
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
 }
+
 .header-menu {
     width: 100%;
     margin: 0 auto;
-    
-	display: flex; 
+    display: flex; 
     justify-content: center;
 	flex-wrap: wrap;
-	min-height: 60px;                
+	min-height: 80px;                
     list-style-type: none; 
     padding-inline-start: 0; 
     margin-block-end: 0;
-    /*position: relative;*/
-    
 }
+
 .header-menu a {
 	display: flex; 
     align-items:center;
     color: black;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.72;
 	text-transform: uppercase;
 	font-weight: 400;
 	text-decoration: none; 
-    min-height: 60px;
+    min-height: 80px;
 	padding: 0 31px; 
 }
+
 .header-menu a:hover  {
    background: rgb(244, 90, 55); 
    /* min-height: 89px;*/
 }
+
 .logo {
-    
-    margin-left: o;
+    margin-left: 20px;
     padding-left: 0;
     text-align: center;
-    background: gray;
+ 
 }
-.btn {
+
+.btn, .btn_calcul {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     min-height: 52px;
+    margin-right: 40px;
     background: rgb(244, 90, 55);
     outline: none;
-  -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
     text-align: center;
     cursor: grab;
     border-radius: 3px;
@@ -112,21 +119,29 @@
     transition: 0.3s;
 }
     
-.btn:hover {
+.btn:hover, .btn_calcul:hover {
     box-shadow: 0px 2px 8px 2px rgba(141,150,178,.3);
     transform: scale(1.05);
     background: rgb(234, 234, 234);
+}
+
+.btn_calcul {
+    margin-top: 30px;
+    margin-right: 40px;
+    float: right;
 }
   
 .btn_text {
     margin: 0 10px;
 }
+
 .btn_icon {
     width:10px;
     height: 10px;
     font-size: 5px;
     text-align: center;
 }
+
 .btn--turn .btn_icon {
     animation-duration: 1s;
     animation-name: turn;
@@ -141,33 +156,65 @@
       transform: rotate(360deg);
     }
 }
+
+h2 {
+   text-align: center; 
+   margin: 35px auto;
+   font-size: 40px;
+}
+h3 {
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+h4 {
+    margin-bottom: 10px;
+}
+
 .choice_unit {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: auto;
+    padding: auto 10px;
 }
-.unit {
+
+.unit_fon {
     position: relative;
+    width: 256px;
+    height:330px;
+    background: rgb(247, 247, 247);
+    border: 1px solid;
+    border-color: rgb(124, 124, 124);
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px;
+}
+
+.unit {
     border: 4px solid;
     border-color: rgb(244, 90, 55);
     border-radius: 5px;
-    margin: 10px auto;
-}
-.name_unit {
-    width: 150px;
-    height: 20px;
-    margin: 0;
-    bottom: 0;
-    text-align: center;
-    position: absolute;
-    visibility: hidden;
+    margin: 10px;
+    padding: 10px;
 }
 
-.unit:hover .name_unit {
+.name_unit {
+    width: 256px;
+    height: 40px;
+    margin: 0;
+    bottom: 0;
+    padding-top: 10px;;
+    position: absolute;
+    visibility: hidden;
+    color: rgb(244, 90, 55);;
+}
+.unit_fon:hover .name_unit {
     visibility: visible;  
 }
-.unit_4 {
+
+
+/*.unit_4 {
     width: 150px;
     height: 187px;
     text-align: center;
@@ -181,12 +228,66 @@
     max-width: 550px;
     text-align: center;
 }
-.enter_data h2 {
-    margin-left: 20px;
+*/
+
+.enter_data  {
+   
+  
 }
-.enter_data {
+
+
+.wall {
+    width: 96%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
     border: 4px solid;
     border-color: rgb(244, 90, 55);
     border-radius: 5px;
-    margin: 10px auto; 
+    margin: auto;
+  
+    
 }
+
+.slides {
+    width: 350 px;
+    height: 450px;
+    margin: 10px;
+}
+
+.wall_data {
+    margin: 10px;
+}
+
+input {
+    border: 2px solid;
+    border-color: rgb(244, 90, 55);
+    border-radius: 5px;
+    margin: 5px;
+    height: 20px;
+}
+::placeholder {
+    color: rgb(244, 90, 55, 0.5);
+    padding-left: 5px;
+}
+
+.wall_coord {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .header-menu a {
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: auto;
+    }
+}
+  
