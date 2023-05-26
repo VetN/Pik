@@ -43,19 +43,17 @@
     background: rgb(255, 255, 255);
     box-sizing: border-box;
 	font-size: 16px;
-	
-    
-    
 }
+
 footer {
     width: 100%;
     margin-top: 100px;
     height: 90px;
     background: rgb(234, 234, 234, 0.7);
 }
+
 .all-header {
-    
-	margin: 10px auto;
+    margin: 10px auto;
     background: rgb(234, 234, 234, 0.7);
     display: flex;
     flex-wrap: nowrap;
@@ -63,7 +61,6 @@ footer {
 }
 
 .header-menu {
-    width: 100%;
     margin: 0 auto;
     display: flex; 
     justify-content: center;
@@ -81,7 +78,6 @@ footer {
 	font-size: 16px;
 	line-height: 1.72;
 	text-transform: uppercase;
-	font-weight: 400;
 	text-decoration: none; 
     min-height: 80px;
 	padding: 0 31px; 
@@ -89,14 +85,12 @@ footer {
 
 .header-menu a:hover  {
    background: rgb(244, 90, 55); 
-   /* min-height: 89px;*/
 }
 
 .logo {
     margin-left: 20px;
     padding-left: 0;
     text-align: center;
- 
 }
 
 .btn, .btn_calcul {
@@ -119,7 +113,7 @@ footer {
     transition: 0.3s;
 }
     
-.btn:hover, .btn_calcul:hover {
+.btn:hover, .btn_calcul:hover, .btn_unit:hover {
     box-shadow: 0px 2px 8px 2px rgba(141,150,178,.3);
     transform: scale(1.05);
     background: rgb(234, 234, 234);
@@ -209,32 +203,34 @@ h4 {
     visibility: hidden;
     color: rgb(244, 90, 55);;
 }
+
 .unit_fon:hover .name_unit {
     visibility: visible;  
 }
 
+.btn_unit {
+    width: 258px;
+    height: 40px;
+    margin: 0 10px;
+    
+    color: rgb(244, 90, 55);
+    cursor: grab;
 
-/*.unit_4 {
-    width: 150px;
-    height: 187px;
-    text-align: center;
-}
-.unit_4 svg {
-    color:rgb(244, 90, 55);
-    width: 50px;
-    margin-top: 67px;
-}
-.h_unit h2 {
-    max-width: 550px;
-    text-align: center;
-}
-*/
 
-.enter_data  {
-   
-  
 }
 
+.card_unit {
+    display: flex;
+    flex-direction: column;
+}
+
+.field_data1, .field_data2, .field_data3, .show_off {
+    display: none;
+}
+
+.show {
+    display: block;
+}
 
 .wall {
     width: 96%;
@@ -245,18 +241,12 @@ h4 {
     border-color: rgb(244, 90, 55);
     border-radius: 5px;
     margin: auto;
-  
-    
 }
 
-.slides {
+.slides1, .slides2, .slides3 {
     width: 350 px;
     height: 450px;
-    margin: 10px;
-}
-
-.wall_data {
-    margin: 10px;
+    margin: 20px;
 }
 
 input {
