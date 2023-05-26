@@ -20,11 +20,6 @@ let slides1 = document.querySelector('.slides1');
 let slides2 = document.querySelector('.slides2');
 let slides3 = document.querySelector('.slides3');
 
-//field_data1.style.display = "none";
-//field_data2.style.display = "none";
-//field_data3.style.display = "none";
-
-
 function page1() {
     
     field_data2.classList.remove("show");
