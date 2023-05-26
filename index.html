@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pik</title>
     <link rel="stylesheet" href="css/style.css">
-    
-    
 </head>
 <body class="page">
     <header>
@@ -49,54 +47,54 @@
         </section>
         <section >
             <div class="field_data1">
-                 <h2>ВВЕДИТЕ ДАННЫЕ</h2>
-            <div class="wall">
-                <div class="slides1">
-                </div>
-                <div class="data">
-                    <div class="wall_data">
-                        <h3> РАЗМЕРЫ СТЕН</h3>
-                        <div class="wall_num1">
-                            <input type="text" id="wall_A1" size="15" placeholder = "стена А">
-                            <input type="text" id="wall_B1" size="15" placeholder = "стена B">
-                            <input type="text" id="wall_C1" size="15" placeholder = "стена C">
-                            <input type="text" id="wall_D1" size="15" placeholder = "стена D" >
+                <h2>ВВЕДИТЕ ДАННЫЕ</h2>
+                <div class="wall">
+                    <div class="slides1">
+                    </div>
+                    <div class="data">
+                        <div class="wall_data">
+                            <h3> РАЗМЕРЫ СТЕН</h3>
+                            <div class="wall_num1">
+                                <input type="text" id="wall_A1" size="15" placeholder = "стена А">
+                                <input type="text" id="wall_B1" size="15" placeholder = "стена B">
+                                <input type="text" id="wall_C1" size="15" placeholder = "стена C">
+                                <input type="text" id="wall_D1" size="15" placeholder = "стена D" >
+                            </div>
+                        </div>
+                        <div class="wall_data">
+                            <h3> КООРДИНАТЫ СТОЯКА</h3>
+                            <div>
+                                <input type="text" id="coord_X1" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y1" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z1" size="15" placeholder = "Z">
+                            </div>    
+                        </div>
+                        <div class="wall_data">
+                            <h3> КООРДИНАТЫ ПОДКЛЮЧЕНИЯ САНТЕХНИЧЕСКИХ ПРИБОРОВ</h3>
+                            <div class="wall_coord">
+                                <h4>РАКОВИНА</h4>
+                                <input type="text" id="coord_X1r" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y1r" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z1r" size="15" placeholder = "Z">
+                        
+                                <h4>УНИТАЗ</h4>
+                                <input type="text" id="coord_X1u" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y1u" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z1u" size="15" placeholder = "Z">
+                            </div>    
                         </div>
                     </div>
-                    <div class="wall_data">
-                        <h3> КООРДИНАТЫ СТОЯКА</h3>
-                        <div>
-                            <input type="text" id="coord_X1" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y1" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z1" size="15" placeholder = "Z">
-                        </div>    
-                    </div>
-                    <div class="wall_data">
-                        <h3> КООРДИНАТЫ ПОДКЛЮЧЕНИЯ САНТЕХНИЧЕСКИХ ПРИБОРОВ</h3>
-                        <div class="wall_coord">
-                            <h4>РАКОВИНА</h4>
-                            <input type="text" id="coord_X1r" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y1r" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z1r" size="15" placeholder = "Z">
-                        
-                            <h4>УНИТАЗ</h4>
-                            <input type="text" id="coord_X1u" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y1u" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z1u" size="15" placeholder = "Z">
-                        </div>    
-                    </div>
                 </div>
+                <button class="btn_1 btn_calcul">
+                    <div class="btn_calcultext">РАСЧЕТ</div>
+                        <div class="btn_icon">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+                                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                            </svg>
+                        </div> 
+                </button>
             </div>
-            <button class="btn_1 btn_calcul">
-                <div class="btn_calcultext">РАСЧЕТ</div>
-                     <div class="btn_icon">
-                         <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
-                             <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-                         </svg>
-                     </div> 
-            </button>
         </section>
-  
         <section>
             <div class="field_data2">
                 <h2>ВВЕДИТЕ ДАННЫЕ</h2>
@@ -131,95 +129,96 @@
                                 <input type="text" id="coord_Y2r" size="15" placeholder = "Y">
                                 <input type="text" id="coord_Z2r" size="15" placeholder = "Z">
                         
-                            <h4>ДУШЕВАЯ КАБИНА</h4>
+                                <h4>ДУШЕВАЯ КАБИНА</h4>
                                 <input type="text" id="coord_X2d" size="15" placeholder = "X">
                                 <input type="text" id="coord_Y2d" size="15" placeholder = "Y">
                                 <input type="text" id="coord_Z2d" size="15" placeholder = "Z">
 
-                            <h4>УНИТАЗ</h4>
+                                <h4>УНИТАЗ</h4>
                                 <input type="text" id="coord_X2u" size="15" placeholder = "X">
                                 <input type="text" id="coord_Y2u" size="15" placeholder = "Y">
                                 <input type="text" id="coord_Z2u" size="15" placeholder = "Z">
                             </div>    
                         </div>
                     </div>
+                    <button class="btn_2 btn_calcul">
+                        <div class="btn_calcultext">РАСЧЕТ</div>
+                        <div class="btn_icon">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+                                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                            </svg>
+                        </div> 
+                    </button>
                 </div>
-        <button class="btn_2 btn_calcul">
-            <div class="btn_calcultext">РАСЧЕТ</div>
-                 <div class="btn_icon">
-                     <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
-                         <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-                     </svg>
-                 </div> 
-            </button>
+            </div>    
         </section>
-        <div class="field_data3">
-            <h2>ВВЕДИТЕ ДАННЫЕ</h2>
-        <div class="wall">
-            <div class="slides3">
-            </div>
-            <div class="data">
-                <div class="wall_data">
-                    <h3> РАЗМЕРЫ СТЕН 1</h3>
-                    <div class="wall_num2">
-                        <input type="text" id="wall_A3" size="15" placeholder = "стена А">
-                        <input type="text" id="wall_B3" size="15" placeholder = "стена B">
-                        <input type="text" id="wall_C3" size="15" placeholder = "стена C">
-                        <input type="text" id="wall_D3" size="15" placeholder = "стена D" >
+        <section>
+            <div class="field_data3">
+                <h2>ВВЕДИТЕ ДАННЫЕ</h2>
+                <div class="wall">
+                    <div class="slides3">
                     </div>
-               
-                
-                    <h3> РАЗМЕРЫ СТЕН 2</h3>
-                    <div class="wall_num2">
-                        <input type="text" id="wall_E3" size="15" placeholder = "стена E" >
-                        <input type="text" id="wall_F3" size="15" placeholder = "стена F" >
-                        <input type="text" id="wall_G3" size="15" placeholder = "стена G" >
-                        <input type="text" id="wall_H3" size="15" placeholder = "стена H" >
-                    </div>
-                </div>      
-                <div class="wall_data">
-                    <h3> КООРДИНАТЫ СТОЯКА</h3>
-                    <div>
-                        <input type="text" id="coord_X3" size="15" placeholder = "X">
-                        <input type="text" id="coord_Y3" size="15" placeholder = "Y">
-                        <input type="text" id="coord_Z3" size="15" placeholder = "Z">
-                    </div>    
-                </div>
-                <div class="wall_data">
-                    <h3> КООРДИНАТЫ ПОДКЛЮЧЕНИЯ САНТЕХНИЧЕСКИХ ПРИБОРОВ</h3>
-                    <div class="wall_coord">
-                        <h4>РАКОВИНА 1</h4>
-                            <input type="text" id="coord_X3r" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y3r" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z3r" size="15" placeholder = "Z">
+                    <div class="data">
+                        <div class="wall_data">
+                            <h3> РАЗМЕРЫ СТЕН 1</h3>
+                            <div class="wall_num2">
+                                <input type="text" id="wall_A3" size="15" placeholder = "стена А">
+                                <input type="text" id="wall_B3" size="15" placeholder = "стена B">
+                                <input type="text" id="wall_C3" size="15" placeholder = "стена C">
+                                <input type="text" id="wall_D3" size="15" placeholder = "стена D" >
+                            </div>
+                            <h3> РАЗМЕРЫ СТЕН 2</h3>
+                            <div class="wall_num2">
+                                <input type="text" id="wall_E3" size="15" placeholder = "стена E" >
+                                <input type="text" id="wall_F3" size="15" placeholder = "стена F" >
+                                <input type="text" id="wall_G3" size="15" placeholder = "стена G" >
+                                <input type="text" id="wall_H3" size="15" placeholder = "стена H" >
+                            </div>
+                        </div>      
+                        <div class="wall_data">
+                            <h3> КООРДИНАТЫ СТОЯКА</h3>
+                            <div>
+                                <input type="text" id="coord_X3" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y3" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z3" size="15" placeholder = "Z">
+                            </div>    
+                        </div>
+                        <div class="wall_data">
+                            <h3> КООРДИНАТЫ ПОДКЛЮЧЕНИЯ САНТЕХНИЧЕСКИХ ПРИБОРОВ</h3>
+                            <div class="wall_coord">
+                                <h4>РАКОВИНА 1</h4>
+                                <input type="text" id="coord_X3r1" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y3r1" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z3r1" size="15" placeholder = "Z">
 
-                        <h4>УНИТАЗ</h4>
-                            <input type="text" id="coord_X3u" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y3u" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z3u" size="15" placeholder = "Z">
+                                <h4>УНИТАЗ</h4>
+                                <input type="text" id="coord_X3u" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y3u" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z3u" size="15" placeholder = "Z">
                     
-                        <h4>РАКОВИНА 2</h4>
-                            <input type="text" id="coord_X3r" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y3r" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z3r" size="15" placeholder = "Z">
+                                <h4>РАКОВИНА 2</h4>
+                                <input type="text" id="coord_X3r2" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y3r2" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z3r2" size="15" placeholder = "Z">
                     
-                        <h4>ВАННАЯ</h4>
-                            <input type="text" id="coord_X3d" size="15" placeholder = "X">
-                            <input type="text" id="coord_Y3d" size="15" placeholder = "Y">
-                            <input type="text" id="coord_Z3d" size="15" placeholder = "Z">
-                    </div>    
+                                <h4>ВАННАЯ</h4>
+                                <input type="text" id="coord_X3d" size="15" placeholder = "X">
+                                <input type="text" id="coord_Y3d" size="15" placeholder = "Y">
+                                <input type="text" id="coord_Z3d" size="15" placeholder = "Z">
+                            </div>    
+                        </div>
+                    </div>
                 </div>
+                <button class="btn_2 btn_calcul">
+                    <div class="btn_calcultext">РАСЧЕТ</div>
+                        <div class="btn_icon">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+                                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+                            </svg>
+                        </div> 
+                </button>
             </div>
-        </div>
-    <button class="btn_2 btn_calcul">
-        <div class="btn_calcultext">РАСЧЕТ</div>
-             <div class="btn_icon">
-                 <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
-                     <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
-                 </svg>
-             </div> 
-        </button>
-    </section>
+        </section>
 
     </main>
     <footer></footer>
